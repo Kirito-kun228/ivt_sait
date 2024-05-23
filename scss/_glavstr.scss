@@ -1,5 +1,7 @@
-body{
+.body{
     background-color: rgb(30, 30, 30);
+    font-family: 'Courier New', Courier, monospace;
+    color: white
 }
 .container {
     max-width: 1030px;
@@ -12,6 +14,7 @@ body{
     display: flex;
     justify-content: space-around;
     height: 600px;
+    
 }
 .block{
     display: flex;
@@ -22,7 +25,6 @@ body{
 .logo{
     width: 200px;
     height: 200px;
-
     margin-top: 80px;
 }
 .text-block{
@@ -35,17 +37,18 @@ body{
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    
 }
 
-
-
+    
 
 
 @media(max-width: 950px) {
+    .body{
+        background-color: rgb(30, 30, 30);
+    }
     .container{
         margin-top: 10px;
-        color: white;
+        background-color: rgb(30, 30, 30);
     }
     .text-block{
         background-color: blurgb(95, 21, 163);
@@ -53,6 +56,8 @@ body{
         height: 250px;
         border-radius: 10%;
         margin: 15px auto;
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
     }
     img {
         width: 100%;
@@ -61,11 +66,11 @@ body{
       }
 
     .header{
-        color: white;
         height: 300px;
         margin: 0 auto;
         display: flex;
         justify-content: flex-start;
+        background-color: rgb(30, 30, 30);
         background: url('/vec_img/сетка.svg');
         background-repeat: no-repeat;
         background-size: cover;
@@ -82,7 +87,6 @@ body{
     .logo{
         width: 100px;
         height: 65px;
-
         margin: 40px auto;
     }
     .block{
@@ -146,7 +150,7 @@ body{
     }
     #мероприятия{
         width: 100%;
-        background: linear-gradient(70deg, transparent 50%, rgba(94, 21, 163, 0.742) 55%), url(/images/мероприятия.png);
+        background: linear-gradient(70deg, transparent 50%, rgba(94, 21, 163, 0.742) 55%), url(/images/спорт.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: left;
@@ -183,9 +187,9 @@ body{
         background-size: cover;
         background-position: center center;
     }
-    @font-face {
-        font-family: 3270;
-        src: url("/fonts/3270.ttf");
-      }
-
+    .p{
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+    }
 }
+
